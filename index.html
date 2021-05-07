@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>JavaScript Form Validation using a sample registration form</title>
+<script src="C:\xampp\htdocs\STlab\pgm3.js"></script>
+<style type="text/css">
+label
+{
+width:4em;
+float:left;
+text-align:right;
+margin-right:0.5em;
+display:block;
+}
+.input 
+{
+width:3.5em;
+margin-left:.4.5em;
+}
+textarea
+{
+width:20%;
+height:60px;
+width:350px;
+margin-right:0.5em;
+box-sizing:border-box;
+border:2px solid #ccc;
+border-radius:4px;
+resize:none;
+}
+</style>
+</head>
+
+<body bgcolor="pink">
+<body onload="document.registration.userid.focus();">
+<h1><u><center>Registration Form</center></u></h1>
+<b><center>Use tab keys to move from one input field to the next.</center></b>
+<form name='registration' onSubmit="return formValidation();"><br/>
+<label for="userid">User Id:</label>
+<input type="text" name="userid" size="30" /><br/><br/>
+<label for="passid">Password:</label>
+<input type="password" name="passid" size="30" /><br/><br/>
+<label for="username">Name:</label></li>
+<input type="text" name="username" size="30" /><br/><br/>
+<label for="ph">Phone no : </label>
+<input type="text" name="ph" size="30" /><br/><br/>
+<label for="email">Email:</label>
+<input type="text" name="email" size="30" /><br/><br/>
+<label id="gender">Sex:</label></li>
+<input type="radio" name="msex" value="Male" ><span>Male</span>
+<input type="radio" name="fsex" value="Female" ><span>Female</span><br/><br/>
+&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="Submit" />
+&nbsp;&nbsp;&nbsp;<input type="reset" name="clear form" value="reset" /><br/>
+<br><textarea name="a1"></textarea>
+</form>
+</body>
+</html>
